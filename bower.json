@@ -1,0 +1,9 @@
+{
+  "name": "bit-toggle-switch",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "angular": "latest"
+  }
+}

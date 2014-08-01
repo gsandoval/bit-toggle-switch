@@ -1,0 +1,74 @@
+.toggle-switch {
+  /*background-color: #43423a;*/
+
+  /*border-radius: 1000em;*/
+
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+.toggle-switch .state {
+  margin: .3em;
+  vertical-align: middle;
+  /*background-color: #43423a;*/
+
+  /*border-radius: 1em;*/
+
+  white-space: nowrap;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /*-moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;*/
+
+  position: absolute;
+}
+.toggle-switch .state .indicator,
+.toggle-switch .state .state-label {
+  display: inline-block;
+}
+.toggle-switch .state .indicator {
+  width: 2em;
+  /*border-radius: 1em;*/
+
+  height: 2em;
+  vertical-align: middle;
+}
+.toggle-switch .state .state-label {
+  vertical-align: middle;
+  line-height: 2em;
+  margin: 0 .4em;
+  text-align: center;
+}
+.toggle-switch [data-hb-toggle-switch-off],
+.toggle-switch [data-hb-toggle-switch-on] {
+  display: inline-block;
+  vertical-align: top;
+}
+.toggle-switch .toggle-switch .off-state-hidden,
+.toggle-switch .toggle-switch .on-state-hidden {
+  opacity: 0;
+}
+.toggle-switch .toggle-switch .on-state .indicator {
+  /*background-color: #96eb50;*/
+
+}
+.toggle-switch .toggle-switch .on-state .state-label {
+  /*color: #96eb50;*/
+
+}
+.toggle-switch .toggle-switch .off-state .indicator {
+  /*background-color: #ffcc00;*/
+
+}
+.toggle-switch .toggle-switch .off-state .state-label {
+  /*color: #ffcc00;*/
+
+}

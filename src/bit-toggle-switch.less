@@ -1,0 +1,78 @@
+.toggle-switch {
+    /*background-color: #43423a;*/
+    /*border-radius: 1000em;*/
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+
+    .state {
+        margin: .3em;
+        vertical-align: middle;
+        /*background-color: #43423a;*/
+        /*border-radius: 1em;*/
+        white-space: nowrap;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        /*-moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;*/
+        position: absolute;
+
+        .indicator, .state-label {
+            display: inline-block;
+        }
+
+        .indicator {
+            width: 2em;
+            /*border-radius: 1em;*/
+            height: 2em;
+            vertical-align: middle;
+        }
+
+        .state-label {
+            vertical-align: middle;
+            line-height: 2em;
+            margin: 0 .4em;
+            text-align: center;
+        }
+    }
+
+    [data-hb-toggle-switch-off], [data-hb-toggle-switch-on] {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .toggle-switch {
+        .off-state-hidden, .on-state-hidden {
+            opacity: 0;
+        }
+
+        .on-state {
+            .indicator {
+                /*background-color: #96eb50;*/
+            }
+
+            .state-label {
+                /*color: #96eb50;*/
+            }
+        }
+
+        .off-state {
+            .indicator {
+                /*background-color: #ffcc00;*/
+            }
+
+            .state-label {
+                /*color: #ffcc00;*/
+            }
+        }
+    }
+}
+
